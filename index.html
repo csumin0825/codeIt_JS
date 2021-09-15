@@ -7,22 +7,25 @@
 <script>
 alert('Hello World!')
 
-var material1 = 3;
-var material2 = '3';
-var material3 = 10;
-var material4 = '4';
-var material5 = 4
+// 숫자현과 문자열 재료
+var material1 = '3';
+var material2 = 3;
+var material3 = '4';
+var material4 = 10;
 
-var resualt1;
-var resualt2;
+// 요리 결과
+var result1;
+var result2;
 
-resualt1 = material2 + material4;
-resualt2 = material1*material3 + material5;
+// 형 변환을 사용해서 result1에는 문자열 '30'을, result2에는 숫자형 40을 만들어 넣어보세요.
+//코드를 작성하세요.
+result1 = String(material2 * material4);
+result2 = Number(material3) * material4;
 
-console.log(resualt1);
-console.log(typeof resualt1);
-console.log(resualt2);
-console.log(typeof resualt2);
+console.log(result1)
+console.log(typeof result1)
+console.log(result2)
+console.log(typeof result2)
 
 </script>
 </body>
