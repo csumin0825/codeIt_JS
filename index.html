@@ -6,21 +6,10 @@
 <body>
 <script>
 
-var inputNumber = window.prompt("한 자리 숫자를 적어주세요.");
+var brands = ['Apple', 'Coca-Cola', 'Starbucks', 'Amazon', 'Disney', 'BMW'];
 
-switch (inputNumber){
-	case '0':
-		alert('Zero');
-		break;
-	case '1':
-		alert('One');
-		break;
-	case '7':
-		alert('Lucky!');
-		break;
-	default:
-		alert('Unlucky!');
-		break;
+for(var i = 0; i < 6; i = i + 1){
+	console.log(brands[i]);
 }
 
 </script>
