@@ -1,13 +1,34 @@
-// switch문
-myChoice = Number(prompt('당신의 선택은? (1 or 2)'));
+// 실습: 등급별 티켓 가격
 
-switch(myChoice){
-    case 1:
-        console.log('토끼');
-        break;
-    case 2:
-        console.log('거북이');
-        break;
-    default:
-        console.log('다시 입력!');
+// 각 등급별 가격
+let VIPPrice = 15;
+let RPrice = 13;
+let SPrice = 10;
+let APrice = 8;
+
+// 각 등급에 맞는 가격을 출력하는 함수 checkPrice를 완성하세요.
+function checkPrice(grade) {
+    switch(grade){
+        case 'VIP':
+            console.log(`${grade}석은 ${VIPPrice}만원 입니다.`);
+            break;
+        case 'R':
+            console.log(`${grade}석은 ${RPrice}만원 입니다.`);
+            break;
+        case 'S':
+            console.log(`${grade}석은 ${SPrice}만원 입니다.`);
+            break;
+        case 'A':
+            console.log(`${grade}석은 ${APrice}만원입니다.`);
+            break;
+        default:
+            console.log('VIP, R, S, A 중에서 하나를 선택해주세요.')
+    }
 }
+
+// 테스트 코드
+checkPrice('R');
+checkPrice('VIP');
+checkPrice('S');
+checkPrice('A');
+checkPrice('B');
